@@ -1,0 +1,13 @@
+
+public void clickStaleElement(WebElement element){
+    wait.until(driver ->{
+        try {
+            element.click();
+            return true;
+        }catch (StaleElementReferenceException e){
+            return false;
+        }catch (Exception e){
+            return false;
+        }
+    });
+}

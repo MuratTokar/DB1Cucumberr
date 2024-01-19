@@ -1,0 +1,57 @@
+
+1- STEP DEF LER OLACAK
+2- STEPSLERIN BAGLI OLDUGU FEATURE LER OLACAK
+3-PAGE OBJECTS OLACAK
+4-DRIVER URETECEK DRIVER FACTORY OLACAK
+5-DRIVER IN OKUMASI ICIN BIR CONFIG DOSYASI LAZIM
+6-WEBDRIVER VE CONFIG PAKETLERI LAZIM
+
+***WEBDRIVER VE CONFIG I MAIN DE JAVA ALTINDA ACABILIRZ
+
+
+****************************************************
+
+CONFIG DOSYAMIZI BU SEKILDE YAPABILIZ
+application:
+  name: "Automation Exercise"
+  url: "https://automationexercise.com/"
+
+users:
+  - name: "admin"
+    username: ""
+    password: ""
+
+  - name: "user1"
+    username: ""
+    password: ""
+
+
+tests:
+  browser: CHROME # FIREFOX ,EDGE    bunlardan hergangi biri olabilir
+  features: ""
+  tags: ""   # tag ve feature lerimi burda belirtebilirim
+
+chrome: # burda browser ler ile ilgili options laei ekleyebilirz
+  version: 116
+  options:
+    - ""
+    - ""
+
+edge:
+  version:
+  options:
+    - ""
+    - ""
+
+firefox:
+  version:
+  options:
+    - ""
+    - ""
+
+variables:   # buraya variableleri map seklinde ekleyebilirim
+
+  var1: "variable1"
+  var2: "variable1"
+  var3: "variable1"
+  var4: "variable1"
