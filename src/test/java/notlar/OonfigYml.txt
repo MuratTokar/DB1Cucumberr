@@ -55,3 +55,6 @@ variables:   # buraya variableleri map seklinde ekleyebilirim
   var2: "variable1"
   var3: "variable1"
   var4: "variable1"
+
+
+ Bu dosya pojo ya cevrilip Testconfig class a atilir.Bunu kopyalayip googleye yml to pojo yazip klonsola yapistirirz
