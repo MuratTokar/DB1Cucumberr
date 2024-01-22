@@ -1,0 +1,52 @@
+
+
+// pojo ya cevrilen config i setter ve getter ile variable class i sildik
+// loblook ta zaten set ve get oldugu icin sildik
+// variables class yerinede aplication class ta Map olusturduk
+class larin ustune @Data ekldeik
+
+@Data // datalar yerine @Getter yada setter yazabilirz ama dat ile hepsini aliriz
+public class TestConfig {
+    // config file nin pojo sudur.Okunmasi kolay olsun diye file den buraya atariz
+    private Application application;
+    private List<User> users = new ArrayList<User>();
+    private Tests tests;
+    private Browser chrome;
+    private Browser edge;
+    private Browser firefox;
+    private Map<String ,String> variables;
+
+@Data
+    public class Application {
+        private String name;
+        private String url;
+
+    }
+
+@Data
+    public class Browser{
+        private Integer version;
+        private List<String> options = new ArrayList<String>();
+
+    }
+
+@Data
+    public class Tests {
+        private String browser;
+        private String features;
+        private String tags;
+
+
+    }
+
+@Data
+    public class User {
+        private String name;
+        private String username;
+        private String password;
+
+    }
+
+    // innerclasslarida static yaptik ve baska clsaa ta örnegin; new Testconfig.get....ile verileri aliriz
+    // Innerclasslar static ama nesne olusturulabilir
+    //pojo ya cevrilirken inner class olarak acilir istesek her birini ayri bir public class ta yapabiliriz

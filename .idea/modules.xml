@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DB1Cucumberr.iml" filepath="$PROJECT_DIR$/DB1Cucumberr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db1Cucumber.iml" filepath="$PROJECT_DIR$/db1Cucumber.iml" />
     </modules>
   </component>
 </project>

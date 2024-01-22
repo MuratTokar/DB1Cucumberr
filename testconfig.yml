@@ -5,40 +5,59 @@ application:
 
 users:
   - name: "admin"
-    username: ""
-    password: ""
+    username: "admin"
+    password: "admin1"
 
-  - name: "user1"
-    username: ""
-    password: ""
+  - name: "tester"
+    username: "tester"
+    password: "tester1"
+
+  - name: "user"
+    username: "user"
+    password: "user1"
 
 
 tests:
-  browser: CHROME # FIREFOX ,EDGE    bunlardan hergangi biri olabilir
-  features: ""
-  tags: ""   # tag ve feature lerimi burda belirtebilirim
+  browser: CHROME # FIREFOX, EDGE, SAFARI
+  features: "src/main/resources/features/01Login.feature"
+  tags: ""
+  dryRun: false
 
-chrome: # burda browser ler ile ilgili options laei ekleyebilirz
+
+
+chrome:
   version: 116
+  extensions:
+    - "src/main/resources/crx/add_blocker_extension_4_44_0_0.crx"
+    - ""
   options:
-    - ""
-    - ""
+    - "--start-maximized"
+    - "--disable-popup-blocking"
+    #- "--headless"
+    #- "--incognito"
+    - "user-data-dir=C:/Users/pc/AppData/Local/Google/Chrome/User Data"
 
 edge:
-  version:
+  version: 110
+  extensions:
+    - "crx/add_blocker_extension_4_44_0_0.crx"
+    - ""
   options:
     - ""
     - ""
 
 firefox:
-  version:
+  version: 62
+  extensions:
+    - ""
   options:
     - ""
     - ""
 
-variables:   # buraya variableleri map seklinde ekleyebilirim
-
+variables:
   var1: "variable1"
-  var2: "variable1"
-  var3: "variable1"
-  var4: "variable1"
+  var2: "variable2"
+  var3: "variable3"
+  var4: "variable4"
+  aaa: "bbbbbb"
+  ali.veli.deli: "121312312312"

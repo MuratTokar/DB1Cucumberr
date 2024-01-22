@@ -1,0 +1,34 @@
+
+ public static void main(String[] args) throws IOException {
+        File file=new File("testconfig.yml");
+
+        // mapper ile objeleri eslestirecek yani map edecek reader objesi olustu
+        // Eger Yaml kullanilacaksa  ObjectMapper(new YAMLFactory()); buray new YAMLFactory yazdik ama json kullanilacksa birsey yazmayiz
+        ObjectMapper mapper=new ObjectMapper(new YAMLFactory());
+
+
+        //Yani mapper ile file  dosyasini kullanarak  TestInnerClass ta bir obje olustur
+        TestConfigInnerClass config1=mapper.readValue(file, TestConfigInnerClass.class);
+        System.out.println("config1.getApplication().getName() = " + config1.getApplication().getName());
+
+
+
+
+        /* Strem ile ypatik
+       String pass= config1.getUsers().stream().filter(U -> U.getName()
+               .equalsIgnoreCase("admin")).findFirst().get().getPassword();
+        System.out.println("pass = " + pass);
+
+*/
+        String pass="";
+        for (TestConfigInnerClass.User user : config1.getUsers()) {
+           if (user.getName().equalsIgnoreCase("admin")){
+               pass=user.getName();
+               break;
+           }
+
+        }
+        System.out.println("pass = " + pass);
+
+
+    }
