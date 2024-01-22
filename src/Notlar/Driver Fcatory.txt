@@ -1,0 +1,28 @@
+DRIVERFACTORY DRIVER URETECEK VE OPTIONSLARI CONFIG.YLM DOSYASINDAKI OPTIONSLARI ALIP URETTECEK
+
+public class DriverFactory {
+    // bu class driver uretecek
+    public ChromeDriver createChrome(TestConfig config){
+        ChromeOptions options=new ChromeOptions();
+        for (String option : config.getChrome().getOptions()) { // configyml den options alir
+            options.addArguments(option);
+        }
+        return new ChromeDriver(options);
+    }
+
+    public EdgeDriver createEdgeDriver(TestConfig config){
+        EdgeOptions options=new EdgeOptions();
+        for (String option : config.getEdge().getOptions()) {
+            options.addArguments(option);
+        }
+        return new EdgeDriver(options);
+    }
+
+    public FirefoxDriver createFirefox(TestConfig config){
+        FirefoxOptions options=new FirefoxOptions();
+        for (String option : config.getFirefox().getOptions()) {
+            options.addArguments(option);
+        }
+        return new FirefoxDriver(options);
+    }
+}
