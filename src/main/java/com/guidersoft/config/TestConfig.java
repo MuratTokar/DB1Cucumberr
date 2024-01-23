@@ -23,7 +23,7 @@ public class TestConfig {
     private Map<String, String> variables;
     //testconfig.yml den istedgimiz user i return edecek bu metot
     public User getUser(String userType){
-        return users.stream().filter(u -> u.getName().equalsIgnoreCase(userType)).findFirst().get(); // hangi user type yazarsak onu gonderrir
+        return users.stream().filter(u -> u.getType().equalsIgnoreCase(userType)).findFirst().get(); // hangi user type yazarsak onu gonderrir
     }
 
     @Data

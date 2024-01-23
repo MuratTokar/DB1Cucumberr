@@ -4,17 +4,20 @@ application:
   url: "https://automationexercise.com/"
 
 users:
-  - name: "admin"
+  - type: "admin"
+    name: "MuratTokar"
     username: "admin"
     password: "admin1"
 
-  - name: "tester"
+  - type: "admin"
+    name: "Murat Tokar"
     username: "tester"
     password: "tester1"
 
-  - name: "user"
-    username: "user"
-    password: "user1"
+  - type: "user"
+    name: "Murat Tokar"
+    username: "atezgider@gmail.com"
+    password: "ahmet123"
 
 
 tests:
