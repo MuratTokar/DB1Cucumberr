@@ -1,7 +1,6 @@
 package com.guidersoft.webdriver;
 
 import com.guidersoft.config.TestConfig;
-import com.guidersoft.config.TestConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,6 +8,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+
+import java.io.File;
 
 public class DriverFactory {
     // bu class driver uretecek
@@ -18,6 +19,8 @@ public class DriverFactory {
             if (option.length()>0)  // bos olunca hata vermesin
             options.addArguments(option);
         }
+        options.addExtensions(new File("add_blocker_extension_4_44_0_0.crx")); // reklam engellemek icin addblocker
+
         return new ChromeDriver(options);
     }
 

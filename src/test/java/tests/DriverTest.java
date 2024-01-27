@@ -15,7 +15,7 @@ public class DriverTest {
 
         WebDriver driver= Driver.getDriver();
         driver.get(config.getApplication().getUrl());
-        Driver.quit();
+       // Driver.quit();
     }
 
 }

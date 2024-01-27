@@ -14,30 +14,42 @@ public abstract class BaseTest {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
+
     protected BaseTest(){
-        driver= Driver.getDriver();
-        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver = Driver.getDriver();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void click(By locator){
-       WebElement element= wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-       element.click();
-
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        click(element);
     }
+
+
     public void click(WebElement element){
-        wait.until(driver ->{
+        //wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+
+        wait.until(driver -> {
             try {
                 element.click();
                 return true;
-
-            }catch (StaleElementReferenceException e) {
+            }catch (StaleElementReferenceException e){
                 return false;
-            }catch (Exception e) {
+            }catch (Exception e){
                 return false;
             }
-
         });
-
     }
+
+
+    public void sendKeys(By locator, CharSequence...texts){
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        sendKeys(element, texts);
+    }
+
+    public void sendKeys(WebElement element, CharSequence...texts){
+        wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(texts);
+    }
+
 
 }

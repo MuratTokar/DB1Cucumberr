@@ -34,6 +34,7 @@ chrome:
     - "--start-maximized"
    # - "--incognito" # gizli moddan acar
 
+
 edge:
   version: 110
   options:
