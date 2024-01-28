@@ -1,0 +1,43 @@
+
+
+Oncelikle POM a bu pluginler eklenir
+ <!-- allure report -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>2.24.0</version>
+        </dependency>
+        AllureListener class i runner paketi altinda actik
+
+
+       import kismindaki bu adresi io dan itibaren kopyaladik ve resources paketi altina bir META-INF ve altina
+       Srvice paketi olusturduk service altina fail olusturduk ve ve fail ismine yapistirdik
+
+        import io.qameta.allure.listener.StepLifecycleListener;
+
+
+
+        public class AllureListener implements StepLifecycleListener {
+            @Override
+            public void beforeStepStop(StepResult result) {
+                if (result.getStatus() == Status.FAILED || result.getStatus() == Status.BROKEN){
+                    Allure.attachment("Error:", result.getStatusDetails().getMessage());
+                    byte[] resim = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+                    Allure.addAttachment("Screenshot", new ByteArrayInputStream(resim));
+                }
+            }
+
+        }
+ AllureListener class in source path ini acilan fail icine yapistirdik yani path boyle idi;
+
+ com/guidersoft/runner/AllureListener.java  ama pathi su sekilde yapariz
+
+ com.guidersoft.runner.AllureListener bu sekilde yapariz
+
+
+
+
+
+Allure verılerı src ustunde allure-reports paketıne gıder ve bızde termınale asagıdakı gıbı yapinca rapor bsilir
+
+Terminale allure serve yazinca altta link cikacaktir .O linke tiklayinca ancak allure raporu gorebiliriz

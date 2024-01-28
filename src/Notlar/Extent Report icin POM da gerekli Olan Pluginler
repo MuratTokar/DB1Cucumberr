@@ -1,0 +1,22 @@
+
+ <!-- for extent report -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.13.0</version>
+        </dependency>
+
+         <!-- for extent report -->
+                <dependency>
+                    <groupId>com.aventstack</groupId>
+                    <artifactId>extentreports</artifactId>
+                    <version>5.0.9</version>
+                </dependency>
+
+                Buaraya ekledikten sonra Runner de plugin bolumune
+                #
+                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", bunu ekleriz.
+                 extent.properties ile rapor ilgili detaylar ayarlanir
+                 extentconfig de ise bunlarla ilgili sablonlar ayaralanir
+
+                 Ekran goruntusunu ise hooks ta after yada afterstept e ekleriz
