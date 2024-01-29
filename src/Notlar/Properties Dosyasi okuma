@@ -1,0 +1,20 @@
+properties uzantili file olustururz ve icine datalari yazariz
+Datalar key ve value seklinde olur
+
+url="https://www.google.com/ gibi
+
+// property tanimlaniyor
+        Properties properties=new Properties();
+
+        //Hangi property file okunacak ,FileReader
+        String file="src/test/java/fileProces/_01_Property.properties"; // content rottan path aldik
+
+        //FileReader kullanarak okunur
+        FileReader fileReader=new FileReader(file);
+
+        //okunani yukledik
+        properties.load(fileReader);
+
+        System.out.println("properties.getProperty(\"url\") = " + properties.getProperty("url"));
+
+         fileReader.close();// kapatiyorz sonunda
