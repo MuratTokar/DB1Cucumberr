@@ -28,6 +28,7 @@ public class LoginSteps {
     LoginSignUp loginSignup = new LoginSignUp();
     private static final Logger LOGGER = Logger.getLogger(LoginSteps.class.getName());
     Handler fileHandler;
+
     @Given("user on homepage")
     public void userOnHomepage() {
         home.goTopage();
@@ -43,7 +44,7 @@ public class LoginSteps {
     @When("^user clicks (LOGIN|SIGNUP|HOME|CART|PRODUCTS|CONTACTUS) on menu$")
     public void userClicksSignupLoginOnMenu(String menuText) {
 
-        switch (menuText){
+        switch (menuText) {
             case "LOGIN":
             case "SIGNUP":
                 menu.signupLogin.click();
@@ -76,7 +77,6 @@ public class LoginSteps {
 
         }
          */
-
 
 
     }
@@ -128,11 +128,7 @@ public class LoginSteps {
 
     }
 
-    @Then("login should be successful")
-    public void loginShouldBeSuccessful() {
-        Menu.LOGOUT.shouldBeVisible();
-        LOGGER.log(Level.INFO, "Login is successfull");
-    }
+
 
     @And("user login email as {string} and password as {string}")
     public void userLoginEmailAsAndPasswordAs(String email, String password) {
@@ -146,7 +142,6 @@ public class LoginSteps {
         String password = data.get("password");
         loginSignup.login(email, password);
     }
-
     @And("user fills the New User Signup form as follows")
     public void userFillsTheNewUserSignupFormAsFollows(DataTable table) {
         Map<String, String> data = table.asMap();
@@ -155,6 +150,11 @@ public class LoginSteps {
         String email = data.get("email");
         loginSignup.signup(name, email);
 
+    }
+    @Then("login should be successful")
+    public void loginShouldBeSuccessful() {
+        Menu.LOGOUT.shouldBeVisible();
+        LOGGER.log(Level.INFO, "Login is successfull");
     }
 
 }
