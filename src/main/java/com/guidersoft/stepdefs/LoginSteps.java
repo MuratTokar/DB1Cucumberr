@@ -1,18 +1,14 @@
 package com.guidersoft.stepdefs;
 
-import com.guidersoft.config.TestConfig;
-import com.guidersoft.config.TestConfigReader;
 import com.guidersoft.pageobjects.HomePage;
 import com.guidersoft.pageobjects.LoginSignUp;
 import com.guidersoft.pageobjects.Menu;
 import com.guidersoft.pageobjects.Menuobjeckt;
-import com.guidersoft.webdriver.Driver;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
 
 import java.io.IOException;
 import java.util.Map;
@@ -156,5 +152,6 @@ public class LoginSteps {
         Menu.LOGOUT.shouldBeVisible();
         LOGGER.log(Level.INFO, "Login is successfull");
     }
+
 
 }
