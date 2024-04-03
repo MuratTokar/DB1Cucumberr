@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="2" passed="0" skipped="0" total="2">
+    <suite duration-ms="922" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="922" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="Login">
+                <test-method duration-ms="340" finished-at="2024-01-27T21:05:05.559446300Z" name="Login with user defined in yaml file" started-at="2024-01-27T21:05:04.961940600Z" status="FAIL">
+                    <exception class="java.lang.IllegalArgumentException">
+                        <message><![CDATA[Given user on homepage......................................................skipped
+When user clicks LOGIN on menu with Enum....................................skipped
+And user login as "user"....................................................skipped
+Then login should be successful.............................................skipped
+]]></message>
+                        <full-stacktrace><![CDATA[java.lang.IllegalArgumentException: Extension must exist: C:\java projeleri\DB1Cucumberr\add_blocker_extension_4_44_0_0.crx
+	at org.openqa.selenium.internal.Require$FileChecker.isFile(Require.java:270)
+	at org.openqa.selenium.chromium.ChromiumOptions.lambda$addExtensions$2(ChromiumOptions.java:168)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4204)
+	at org.openqa.selenium.chromium.ChromiumOptions.addExtensions(ChromiumOptions.java:168)
+	at org.openqa.selenium.chromium.ChromiumOptions.addExtensions(ChromiumOptions.java:157)
+	at com.guidersoft.webdriver.DriverFactory.createChrome(DriverFactory.java:22)
+	at com.guidersoft.webdriver.DriverFactory.createDriver(DriverFactory.java:46)
+	at com.guidersoft.webdriver.Driver.getDriver(Driver.java:14)
+	at com.guidersoft.stepdefs.Hooks.beforeScenario(Hooks.java:14)
+]]></full-stacktrace>
+                    </exception>
+                </test-method>
+                <test-method duration-ms="11" finished-at="2024-01-27T21:05:05.665401400Z" name="Sign up" started-at="2024-01-27T21:05:05.643043900Z" status="FAIL">
+                    <exception class="java.lang.IllegalArgumentException">
+                        <message><![CDATA[Given user on homepage......................................................skipped
+When user clicks SIGNUP on menu with Enum...................................skipped
+And user fills the New User Signup form as follows..........................skipped
+Then login should be successful.............................................skipped
+]]></message>
+                        <full-stacktrace><![CDATA[java.lang.IllegalArgumentException: Extension must exist: C:\java projeleri\DB1Cucumberr\add_blocker_extension_4_44_0_0.crx
+	at org.openqa.selenium.internal.Require$FileChecker.isFile(Require.java:270)
+	at org.openqa.selenium.chromium.ChromiumOptions.lambda$addExtensions$2(ChromiumOptions.java:168)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4204)
+	at org.openqa.selenium.chromium.ChromiumOptions.addExtensions(ChromiumOptions.java:168)
+	at org.openqa.selenium.chromium.ChromiumOptions.addExtensions(ChromiumOptions.java:157)
+	at com.guidersoft.webdriver.DriverFactory.createChrome(DriverFactory.java:22)
+	at com.guidersoft.webdriver.DriverFactory.createDriver(DriverFactory.java:46)
+	at com.guidersoft.webdriver.Driver.getDriver(Driver.java:14)
+	at com.guidersoft.stepdefs.Hooks.beforeScenario(Hooks.java:14)
+]]></full-stacktrace>
+                    </exception>
+                </test-method>
+            </class>
+        </test>
+    </suite>
+</testng-results>

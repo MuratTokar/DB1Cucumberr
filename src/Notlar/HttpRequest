@@ -1,0 +1,12 @@
+ @Test
+    public void test() throws Exception {
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI("https://reqres.in/api/users?page=2"))
+                .GET()
+                .build();
+        HttpClient client=HttpClient.newHttpClient();// client hazir olan request i gönderecek
+
+        HttpResponse<?> response = client.send(request, HttpResponse.BodyHandlers.ofString()); // karsidan gelecekler icin
+        System.out.println(response.body());
+
+    }

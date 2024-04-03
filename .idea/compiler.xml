@@ -10,8 +10,5 @@
         <module name="db1Cucumber" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="db1Cucumber" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
