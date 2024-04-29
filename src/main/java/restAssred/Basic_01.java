@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import static io.restassured.RestAssured.given;
 
 
-public class Basic {
+public class Basic_01 {
 
     // Rest assured ile backend testi yapariz
     //BDD mantigindan yazilir . yani kosul sonuc cucumber features gibi
@@ -129,6 +129,18 @@ public class Basic {
                 get("https://reqres.in/api/users?page=2").
                 then().
                 log().body();
+
+    }
+
+    @Test
+    public void test8_basePath() {
+        RestAssured.baseURI = "https://reqres.in";// asagidaki adreste https yoksa burdan alir
+        RestAssured.basePath = "/api";
+        given()
+                .when()
+                .get("/users?page=1")
+                .then()
+                .log().body();
 
     }
 }

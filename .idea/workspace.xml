@@ -4,38 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="027dbef0-d30e-415e-b45d-e8f18be5bf61" name="Changes" comment="09.02">
-      <change afterPath="$PROJECT_DIR$/src/main/java/restAssred/Basic.java" afterDir="false" />
+    <list default="true" id="027dbef0-d30e-415e-b45d-e8f18be5bf61" name="Changes" comment="27.04">
+      <change afterPath="$PROJECT_DIR$/src/main/java/restAssred/Assertion_02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/httpRequest/RequestSample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/base/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Browser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Browsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig$User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/config/TestConfigReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/ContackUs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/ContackUs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/LoginSignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/LoginSignUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/Menuobjeckt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/Menuobjeckt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/pageobjects/ProductPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/AllureListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/AllureListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/RunnerOrg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/RunnerOrg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/runner/Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/CucumberHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/CucumberHooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/LoginSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/LoginSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/OrgLoginstps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/stepdefs/OrgLoginstps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/DriverFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/DriverFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guidersoft/webdriver/DriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/httpRequest/RequestSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restAssred/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restAssred/Basic_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +63,15 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.Assertion_02.test1.executor": "Run",
+    "JUnit.Assertion_02.test2.executor": "Run",
     "JUnit.Basic.test2.executor": "Run",
     "JUnit.Basic.test3StatusCode.executor": "Run",
     "JUnit.Basic.test4_ResponseTime.executor": "Run",
     "JUnit.Basic.test5_PrettyPrint.executor": "Run",
     "JUnit.Basic.test6_PathParam.executor": "Run",
     "JUnit.Basic.test7_pathParam.executor": "Run",
+    "JUnit.Basic.test8_basePath.executor": "Run",
     "JUnit.Basic.test8_baseUri.executor": "Run",
     "JUnit.RequestSample.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -131,8 +107,8 @@
       <recent name="configg" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Basic.test8_baseUri">
-    <configuration name="Basic.test4_ResponseTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Assertion_02.test2">
+    <configuration name="Assertion_02.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="db1Cucumber" />
       <extension name="coverage">
         <pattern>
@@ -141,14 +117,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restAssred" />
-      <option name="MAIN_CLASS_NAME" value="restAssred.Basic" />
-      <option name="METHOD_NAME" value="test4_ResponseTime" />
+      <option name="MAIN_CLASS_NAME" value="restAssred.Assertion_02" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Basic.test5_PrettyPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Assertion_02.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="db1Cucumber" />
       <extension name="coverage">
         <pattern>
@@ -157,14 +133,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restAssred" />
-      <option name="MAIN_CLASS_NAME" value="restAssred.Basic" />
-      <option name="METHOD_NAME" value="test5_PrettyPrint" />
+      <option name="MAIN_CLASS_NAME" value="restAssred.Assertion_02" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Basic.test6_PathParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Basic_01.test7_pathParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="db1Cucumber" />
       <extension name="coverage">
         <pattern>
@@ -173,30 +149,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restAssred" />
-      <option name="MAIN_CLASS_NAME" value="restAssred.Basic" />
-      <option name="METHOD_NAME" value="test6_PathParam" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Basic.test7_pathParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="db1Cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restAssred.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restAssred" />
-      <option name="MAIN_CLASS_NAME" value="restAssred.Basic" />
+      <option name="MAIN_CLASS_NAME" value="restAssred.Basic_01" />
       <option name="METHOD_NAME" value="test7_pathParam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Basic.test8_baseUri" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Basic_01.test8_basePath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="db1Cucumber" />
       <extension name="coverage">
         <pattern>
@@ -205,7 +165,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restAssred" />
-      <option name="MAIN_CLASS_NAME" value="restAssred.Basic" />
+      <option name="MAIN_CLASS_NAME" value="restAssred.Basic_01" />
+      <option name="METHOD_NAME" value="test8_basePath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Basic_01.test8_baseUri" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="db1Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restAssred.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restAssred" />
+      <option name="MAIN_CLASS_NAME" value="restAssred.Basic_01" />
       <option name="METHOD_NAME" value="test8_baseUri" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -214,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Basic.test8_baseUri" />
-        <item itemvalue="JUnit.Basic.test7_pathParam" />
-        <item itemvalue="JUnit.Basic.test6_PathParam" />
-        <item itemvalue="JUnit.Basic.test5_PrettyPrint" />
-        <item itemvalue="JUnit.Basic.test4_ResponseTime" />
+        <item itemvalue="JUnit.Assertion_02.test2" />
+        <item itemvalue="JUnit.Assertion_02.test1" />
+        <item itemvalue="JUnit.Basic_01.test8_basePath" />
+        <item itemvalue="JUnit.Basic_01.test8_baseUri" />
+        <item itemvalue="JUnit.Basic_01.test7_pathParam" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707517854758</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="27.04">
+      <option name="closed" value="true" />
+      <created>1714254632476</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714254632477</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +351,8 @@
     <MESSAGE value="05.02" />
     <MESSAGE value="07.02" />
     <MESSAGE value="09.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="09.02" />
+    <MESSAGE value="27.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="27.04" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
